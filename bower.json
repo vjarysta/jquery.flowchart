@@ -1,5 +1,6 @@
 {
   "name": "jquery.flowchart",
+  "version": "1.0.2",
   "description": "JQuery UI plugin that allows you to draw a flow chart.",
   "main": "jquery.flowchart.js",
   "authors": [

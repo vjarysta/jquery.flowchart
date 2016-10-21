@@ -527,7 +527,7 @@ $(function () {
             $operator_connector.data('sub_connector', subConnector);
 
             var $operator_connector_label = $('<div class="flowchart-operator-connector-label"></div>');
-            $operator_connector_label.text(connectorInfos.label.replace('(:i)', subConnector + 1));
+            $operator_connector_label.html(connectorInfos.label.replace('(:i)', subConnector + 1));
             $operator_connector_label.appendTo($operator_connector);
 
             var $operator_connector_arrow = $('<div class="flowchart-operator-connector-arrow"></div>');
@@ -671,7 +671,7 @@ $(function () {
                 this._unsetTemporaryLink();
             }
         },
-        
+
         _unsetTemporaryLink: function () {
             this.lastOutputConnectorClicked = null;
             this.objs.layers.temporaryLink.hide();
